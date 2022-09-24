@@ -7,6 +7,12 @@ pipeline {
       }
     }
 
+    stage('Test') {
+      steps {
+        sh 'echo "Testing phase"'
+      }
+    }
+
   }
   environment {
     DEMO = '1'
